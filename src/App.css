@@ -1,0 +1,119 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background {
+	position: absolute;
+	width: 95%;
+	z-index: -1;
+  top: 0;
+  left: 2.5%;
+}
+
+#fact {
+	display: flex;
+	justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50px; /* Adjust as needed */
+	width: 80%;
+	font-size: 2.5vw;
+	z-index: 2;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.animals {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 90%;
+	z-index: 2;
+  margin-top: 10rem;
+}
+
+.animal {
+	width: 33.3%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 670px) {
+	.animals {
+		margin-top: 180px;
+	}
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+	.animals {
+		margin-top: 150px;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	.animals {
+		margin-top: 130px;
+	}
+}
+
+@media only screen and (max-width: 200px) {
+	.animals {
+		margin-top: 120px;
+	}
+}
